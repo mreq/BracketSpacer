@@ -1,7 +1,7 @@
 [
   {
     "keys": [" ", " "],
-    "command": "add_spaces_in_braces",
+    "command": "bracket_spacer_add",
     "context": [
       {
         "key": "preceding_text",
@@ -23,7 +23,7 @@
 
   {
     "keys": ["backspace"],
-    "command": "remove_spaces_in_braces",
+    "command": "bracket_spacer_remove",
     "context": [
       {
         "key": "preceding_text",

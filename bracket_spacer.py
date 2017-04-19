@@ -31,7 +31,7 @@ def find_next_bracket(view, line, bracket, start):
     return found
 
 
-class AddSpacesInBraces(sublime_plugin.TextCommand):
+class BracketSpacerAdd(sublime_plugin.TextCommand):
     def run(self, edit):
         view = self.view
         sel = view.sel()[0]
@@ -56,7 +56,7 @@ class AddSpacesInBraces(sublime_plugin.TextCommand):
                 view.sel().add(sublime.Region(sel.a + 1, sel.a + 1))
 
 
-class RemoveSpacesInBraces(sublime_plugin.TextCommand):
+class BracketSpacerRemove(sublime_plugin.TextCommand):
     def run(self, edit):
         view = self.view
         sel = view.sel()[0]
