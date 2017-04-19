@@ -19,5 +19,27 @@
         "operand": true,
       }
     ]
+  },
+
+  {
+    "keys": ["backspace"],
+    "command": "remove_spaces_in_braces",
+    "context": [
+      {
+        "key": "preceding_text",
+        "operator": "regex_contains",
+        "operand": "[\\(\\[\\{] ",
+      },
+      {
+        "key": "following_text",
+        "operator": "regex_contains",
+        "operand": " [\\)\\]\\}]",
+      },
+      {
+        "key": "selection_empty",
+        "operator": "equal",
+        "operand": true,
+      }
+    ]
   }
 ]
